@@ -1,0 +1,115 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Login page",
+        "description": "",
+        "id": "–-as-an-events-crm-manager-i-should-be-able-to-select-activity;login-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "the manager on the login page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "the manager click on the BriteErpDemo button",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "the manager log in using \"EventsCRM_Manager@info.com\" and \"Ugh45wQ12\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "the Manager click log in button",
+            "match": {},
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "1.Events CRM Manager can see options of activity types",
+        "description": "",
+        "id": "–-as-an-events-crm-manager-i-should-be-able-to-select-activity;1.events-crm-manager-can-see-options-of-activity-types",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15,
+            "name": "the Manager click to the CRM from the tab",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 16,
+            "name": "the manager click to the Activity Type",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 17,
+            "name": "the manager see the following information",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      }
+    ],
+    "name": "– As an Events CRM Manager I should be able to select activity",
+    "description": "           types option and view details.",
+    "id": "–-as-an-events-crm-manager-i-should-be-able-to-select-activity",
+    "keyword": "Feature",
+    "uri": "src\\test\\resource\\features\\crm_manager.feature",
+    "tags": [
+      {
+        "name": "@login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
