@@ -17,6 +17,7 @@ Feature: – As an Events CRM Manager I should be able to select activity types 
 			| EventsCRM_Manager@info.com | Ugh45wQ12  |
 
 
+
 	Scenario: Event crm manager can see options of the activity type
 		When the Manager click to the CRM from the tab
 		When the manager goes to the activity type page
