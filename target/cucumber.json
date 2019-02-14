@@ -3,19 +3,18 @@
     "line": 2,
     "elements": [
       {
-        "line": 5,
-        "name": "Login page",
+        "line": 4,
+        "name": "",
         "description": "",
-        "id": "–-as-an-events-crm-manager-i-should-be-able-to-select-activity;login-page",
-        "type": "scenario",
-        "keyword": "Scenario",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
               "status": "undefined"
             },
-            "line": 6,
-            "name": "the manager on the login page",
+            "line": 5,
+            "name": "manager on the login page",
             "match": {},
             "keyword": "Given "
           },
@@ -23,8 +22,36 @@
             "result": {
               "status": "undefined"
             },
-            "line": 7,
-            "name": "the manager click on the BriteErpDemo button",
+            "line": 6,
+            "name": "the manager goes to http://52.39.162.23/",
+            "match": {},
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "line": 17,
+        "name": "Logs in as manager",
+        "description": "",
+        "id": "–-as-an-events-crm-manager-i-should-be-able-to-select-activity-types-option-and-view-details;logs-in-as-manager;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "the manager click on BriteErpDemo",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "the manager enters valid\u003cemail\u003e and \u003cpassword\u003e",
             "match": {},
             "keyword": "When "
           },
@@ -32,32 +59,50 @@
             "result": {
               "status": "undefined"
             },
-            "line": 8,
-            "name": "the manager log in using \"EventsCRM_Manager@info.com\" and \"Ugh45wQ12\"",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 9,
-            "name": "the Manager click log in button",
+            "line": 12,
+            "name": "the manager click login button",
             "match": {},
             "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@login"
+            "name": "@smoke"
           }
         ]
       },
       {
-        "line": 14,
-        "name": "1.Events CRM Manager can see options of activity types",
+        "line": 4,
+        "name": "",
         "description": "",
-        "id": "–-as-an-events-crm-manager-i-should-be-able-to-select-activity;1.events-crm-manager-can-see-options-of-activity-types",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "manager on the login page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "the manager goes to http://52.39.162.23/",
+            "match": {},
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "line": 20,
+        "name": "Event crm manager can see options of the activity type",
+        "description": "",
+        "id": "–-as-an-events-crm-manager-i-should-be-able-to-select-activity-types-option-and-view-details;event-crm-manager-can-see-options-of-the-activity-type",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
@@ -65,17 +110,8 @@
             "result": {
               "status": "undefined"
             },
-            "line": 15,
+            "line": 21,
             "name": "the Manager click to the CRM from the tab",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 16,
-            "name": "the manager click to the Activity Type",
             "match": {},
             "keyword": "When "
           },
@@ -83,7 +119,16 @@
             "result": {
               "status": "undefined"
             },
-            "line": 17,
+            "line": 22,
+            "name": "the manager goes to the activity type page",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 23,
             "name": "the manager see the following information",
             "match": {},
             "keyword": "Then "
@@ -91,19 +136,19 @@
         ],
         "tags": [
           {
-            "name": "@login"
+            "name": "@smoke"
           }
         ]
       }
     ],
-    "name": "– As an Events CRM Manager I should be able to select activity",
-    "description": "           types option and view details.",
-    "id": "–-as-an-events-crm-manager-i-should-be-able-to-select-activity",
+    "name": "– As an Events CRM Manager I should be able to select activity types option and view details",
+    "description": "",
+    "id": "–-as-an-events-crm-manager-i-should-be-able-to-select-activity-types-option-and-view-details",
     "keyword": "Feature",
-    "uri": "src\\test\\resource\\features\\crm_manager.feature",
+    "uri": "src\\test\\resource\\features\\1.feature",
     "tags": [
       {
-        "name": "@login",
+        "name": "@smoke",
         "type": "Tag",
         "location": {
           "line": 1,
