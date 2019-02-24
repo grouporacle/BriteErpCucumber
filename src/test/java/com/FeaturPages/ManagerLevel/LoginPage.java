@@ -1,9 +1,11 @@
-package FeaturPages.ManagerLevel;
+package com.FeaturPages.ManagerLevel;
 
-import Utilities.Driver;
+import com.Utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class LoginPage {
 
@@ -25,11 +27,14 @@ public class LoginPage {
     public WebElement loginButton;
 
 
+    public void login(String email, String password){
+        this.username.sendKeys(email);
+        this.password.sendKeys(password);
+        loginButton.click();
 
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 5);
+        wait.until(ExpectedConditions.urlContains(""));
 
-
-
-
-
+    }
 
 }

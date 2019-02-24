@@ -17,31 +17,31 @@
             "name": "manager on the login page",
             "match": {},
             "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 6,
-            "name": "the manager goes to http://52.39.162.23/",
-            "match": {},
-            "keyword": "When "
           }
         ]
       },
       {
-        "line": 17,
+        "line": 9,
         "name": "Logs in as manager",
         "description": "",
-        "id": "–-as-an-events-crm-manager-i-should-be-able-to-select-activity-types-option-and-view-details;logs-in-as-manager;;2",
+        "id": "–-as-an-events-crm-manager-i-should-be-able-to-select-activity-types-option-and-view-details;logs-in-as-manager",
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
               "status": "undefined"
             },
             "line": 10,
+            "name": "the manager goes to http://52.39.162.23/",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
             "name": "the manager click on BriteErpDemo",
             "match": {},
             "keyword": "Given "
@@ -50,8 +50,8 @@
             "result": {
               "status": "undefined"
             },
-            "line": 11,
-            "name": "the manager enters valid\u003cemail\u003e and \u003cpassword\u003e",
+            "line": 12,
+            "name": "the manager enters valid \"EventsCRM_Manager@info.com\" and  \"Ugh45wQ12\"",
             "match": {},
             "keyword": "When "
           },
@@ -59,58 +59,16 @@
             "result": {
               "status": "undefined"
             },
-            "line": 12,
+            "line": 13,
             "name": "the manager click login button",
             "match": {},
             "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@smoke"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 5,
-            "name": "manager on the login page",
-            "match": {},
-            "keyword": "Given "
           },
           {
             "result": {
               "status": "undefined"
             },
-            "line": 6,
-            "name": "the manager goes to http://52.39.162.23/",
-            "match": {},
-            "keyword": "When "
-          }
-        ]
-      },
-      {
-        "line": 20,
-        "name": "Event crm manager can see options of the activity type",
-        "description": "",
-        "id": "–-as-an-events-crm-manager-i-should-be-able-to-select-activity-types-option-and-view-details;event-crm-manager-can-see-options-of-the-activity-type",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 21,
+            "line": 16,
             "name": "the Manager click to the CRM from the tab",
             "match": {},
             "keyword": "When "
@@ -119,7 +77,7 @@
             "result": {
               "status": "undefined"
             },
-            "line": 22,
+            "line": 17,
             "name": "the manager goes to the activity type page",
             "match": {},
             "keyword": "When "
@@ -128,15 +86,15 @@
             "result": {
               "status": "undefined"
             },
-            "line": 23,
-            "name": "the manager see the following information",
+            "line": 20,
+            "name": "the manager send activity name to the search box and hit enter",
             "match": {},
-            "keyword": "Then "
+            "keyword": "When "
           }
         ],
         "tags": [
           {
-            "name": "@smoke"
+            "name": "@wip"
           }
         ]
       }
@@ -148,7 +106,7 @@
     "uri": "src\\test\\resource\\features\\1.feature",
     "tags": [
       {
-        "name": "@smoke",
+        "name": "@wip",
         "type": "Tag",
         "location": {
           "line": 1,

@@ -1,9 +1,6 @@
-package FeaturPages.ManagerLevel;
+package com.FeaturPages.ManagerLevel;
 
-import Utilities.Driver;
-import cucumber.api.CucumberOptions;
-import cucumber.api.junit.Cucumber;
-import org.junit.runner.RunWith;
+import com.Utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
@@ -12,16 +9,18 @@ import org.openqa.selenium.support.PageFactory;
 import java.util.List;
 
 public class CRMmodule {
+
     public CRMmodule() {
 
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(xpath = "//*[@id=\"oe_main_menu_navbar\"]/div[2]/ul[1]/li[5]/a")
+    @FindBy(xpath = "//*[@id='oe_main_menu_navbar']/div[2]/ul[1]/li[5]/a/span")
     public WebElement crmNavigation;
 
-    @FindBy(xpath = "//ul[@class='oe_secondary_submenu nav nav-pills nav-stacked'][3]//li[2]//span")
+    @FindBy(xpath = "//ul[@class='oe_secondary_submenu nav nav-pills nav-stacked'][3]//li[2]/a")
     public WebElement activityType;
+
 
     @FindBy(xpath = "//input[@class='o_searchview_input']")
     public WebElement serchbox;
@@ -29,16 +28,16 @@ public class CRMmodule {
     @FindBy(xpath = "//span[@title='Advanced Search...']")
     public WebElement click;
 
-    @FindBy(xpath = "//button[@class='btn btn-primary btn-sm o_list_button_add']")
+    @FindBy(xpath = "//div//button[@class='btn btn-primary btn-sm o_list_button_add']")
     public WebElement create;
 
-    @FindBy(xpath = "//input[@class='o_field_char o_field_widget o_input o_required_modifier']")
+    @FindBy(xpath = "//h1//input[@class='o_field_char o_field_widget o_input o_required_modifier']")
     public WebElement name;
 
-    @FindBy(xpath = "//table//tr[3]//td[2]//input[@id='o_field_input_62']")
+    @FindBy(xpath = "//table//tr[3]//td[2]//input[@type='text']")
     public WebElement summary;
 
-    @FindBy(xpath = "//button[@class='btn btn-primary btn-sm o_form_button_save']")
+    @FindBy(xpath = "(//div[@class='o_form_buttons_edit'])//button[1]")
     public WebElement save;
 
     @FindAll({@FindBy(xpath = "/html/body/div[1]/div[2]/div[2]/div/div/div/table/tbody/tr/td[3]")})

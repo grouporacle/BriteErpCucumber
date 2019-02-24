@@ -5,43 +5,7 @@ formatter.feature({
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@smoke"
-    }
-  ]
-});
-formatter.scenarioOutline({
-  "name": "Logs in as manager",
-  "description": "",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "name": "the manager click on BriteErpDemo",
-  "keyword": "Given "
-});
-formatter.step({
-  "name": "the manager enters valid\u003cemail\u003e and \u003cpassword\u003e",
-  "keyword": "When "
-});
-formatter.step({
-  "name": "the manager click login button",
-  "keyword": "And "
-});
-formatter.examples({
-  "name": "",
-  "description": "",
-  "keyword": "Examples",
-  "rows": [
-    {
-      "cells": [
-        "\u003cemail\u003e",
-        "\u003cpassword\u003e"
-      ]
-    },
-    {
-      "cells": [
-        "EventsCRM_Manager@info.com",
-        "Ugh45wQ12"
-      ]
+      "name": "@wip"
     }
   ]
 });
@@ -58,78 +22,47 @@ formatter.match({});
 formatter.result({
   "status": "undefined"
 });
-formatter.step({
-  "name": "the manager goes to http://52.39.162.23/",
-  "keyword": "When "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
 formatter.scenario({
   "name": "Logs in as manager",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@smoke"
-    }
-  ]
-});
-formatter.step({
-  "name": "the manager click on BriteErpDemo",
-  "keyword": "Given "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "the manager enters valid\u003cemail\u003e and \u003cpassword\u003e",
-  "keyword": "When "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "the manager click login button",
-  "keyword": "And "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.step({
-  "name": "manager on the login page",
-  "keyword": "Given "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "the manager goes to http://52.39.162.23/",
-  "keyword": "When "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.scenario({
-  "name": "Event crm manager can see options of the activity type",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@smoke"
+      "name": "@wip"
     }
   ]
+});
+formatter.step({
+  "name": "the manager goes to http://52.39.162.23/",
+  "keyword": "When "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "the manager click on BriteErpDemo",
+  "keyword": "Given "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "the manager enters valid \"EventsCRM_Manager@info.com\" and  \"Ugh45wQ12\"",
+  "keyword": "When "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "the manager click login button",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
 });
 formatter.step({
   "name": "the Manager click to the CRM from the tab",
@@ -148,8 +81,8 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "the manager see the following information",
-  "keyword": "Then "
+  "name": "the manager send activity name to the search box and hit enter",
+  "keyword": "When "
 });
 formatter.match({});
 formatter.result({

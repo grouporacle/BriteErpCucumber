@@ -1,6 +1,6 @@
-package Step_Definition;
+package com.Step_Definition;
 
-import Utilities.Driver;
+import com.Utilities.Driver;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
@@ -19,7 +19,7 @@ public class HOOKS {
         Driver.getDriver().manage().window().maximize();
     }
 
-  //  @After
+    @After
     public void tearDown(Scenario scenario){
         System.out.println("I am reporting the results");
         // I want to take screenshot when current scenario fails.
@@ -35,9 +35,9 @@ public class HOOKS {
         Driver.closeDriver();
     }
 
-    @Before(value = "@teacher", order = 11)
+    @Before(value = "@manager", order = 11)
     public void setUpTeacher(){
-        System.out.println("Set up teacher test");
+        System.out.println("Set up manager test");
     }
 }    //  BREAK some time around 9.10 pm est. UPDATE YOUR CODE. I ALREADY PUSHED IT TO GITHUB
 // git fetch origin
